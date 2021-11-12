@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C3ECF1"
+    tools:context=".ColourChoose">
+
+    <Button
+        android:id="@+id/redButton"
+        android:layout_width="62dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/color_button"
+        android:backgroundTint="#E15555"
+        android:onClick="redColour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textColourChoose"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/blueButton"
+        android:layout_width="62dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/color_button"
+        android:backgroundTint="#92C4EF"
+        android:onClick="blueColour"
+        app:layout_constraintStart_toEndOf="@+id/redButton"
+        app:layout_constraintTop_toBottomOf="@+id/textColourChoose"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/greenButton"
+        android:layout_width="62dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/color_button"
+        android:backgroundTint="#4CAF50"
+        android:onClick="greenColour"
+        app:layout_constraintStart_toEndOf="@+id/blueButton"
+        app:layout_constraintTop_toBottomOf="@+id/textColourChoose"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/blackButton"
+        android:layout_width="62dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+
+        android:background="@drawable/color_button"
+        android:backgroundTint="#171616"
+        android:onClick="blackColour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redButton"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/orangeButton"
+        android:layout_width="62dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/color_button"
+        android:backgroundTint="#FF9800"
+        android:onClick="orangeColour"
+        app:layout_constraintStart_toEndOf="@+id/blackButton"
+        app:layout_constraintTop_toBottomOf="@+id/blueButton"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/yellowButton"
+        android:layout_width="62dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/color_button"
+        android:backgroundTint="#FFEB3B"
+        android:onClick="yellowColour"
+        app:layout_constraintStart_toEndOf="@+id/orangeButton"
+        app:layout_constraintTop_toBottomOf="@+id/greenButton"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textColourChoose"
+        android:layout_width="358dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="170dp"
+        android:text="@string/choose_your_colour"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

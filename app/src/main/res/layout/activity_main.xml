@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#9C9393">
+
+
+    <Button
+        android:id="@+id/colourChooser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/color_button"
+        android:onClick="colourChooser"
+        android:text="@string/colourButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/brushChooser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/color_button"
+        android:onClick="brushChooser"
+        android:text="@string/brushButton"
+        app:layout_constraintStart_toEndOf="@+id/colourChooser"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/brushEraser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/color_button"
+        android:onClick="brushEraser"
+        android:text="@string/eraser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fingerPainterView"
+        tools:ignore="TextContrastCheck" />
+
+    <view
+        android:id="@+id/fingerPainterView"
+        class="com.example.coursework1_1.FingerPainterView"
+        android:layout_width="348dp"
+        android:layout_height="351dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colourChooser" />
+
+    <TextView
+        android:id="@+id/eraserWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="60dp"
+        android:visibility="invisible"
+        android:text="@string/the_eraser_is_activated"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="105dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/color_button"
+        android:onClick="changeBackground"
+        android:text="@string/background"
+        app:layout_constraintStart_toEndOf="@+id/colourChooser"
+        app:layout_constraintTop_toBottomOf="@+id/eraserWarning" />
+
+</android.support.constraint.ConstraintLayout>

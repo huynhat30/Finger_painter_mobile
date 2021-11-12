@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Coursework1-1</string>
+    <string name="colourButton">Colour</string>
+    <string name="brushButton">Brush</string>
+    <string name="roundBut">Round</string>
+    <string name="squareBut">Square</string>
+    <string name="smallBut">Small</string>
+    <string name="largeBut">Large</string>
+    <string name="brush_style">Brush style</string>
+    <string name="brush_size">Brush size</string>
+    <string name="confirmButton">Confirm</string>
+    <string name="choose_your_colour">Choose your colour</string>
+    <string name="eraser">Eraser</string>
+    <string name="the_eraser_is_activated">The eraser is activated</string>
+    <string name="please_choose_brush_style">Please choose brush style!</string>
+    <string name="please_choose_brush_size">Please choose brush size</string>
+    <string name="background">Background</string>
+</resources>

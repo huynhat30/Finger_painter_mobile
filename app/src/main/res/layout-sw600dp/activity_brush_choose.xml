@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C3ECF1"
+    tools:context=".BrushChoose">
+
+    <Button
+        android:id="@+id/roundBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/color_button"
+        android:onClick="brushStyleButtonPress"
+        android:tag="ROUND"
+        android:text="@string/roundBut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/squareBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/color_button"
+        android:onClick="brushStyleButtonPress"
+        android:tag="SQUARE"
+        android:text="@string/squareBut"
+        app:layout_constraintStart_toEndOf="@+id/roundBut"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/smallBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/color_button"
+        android:onClick="brushStyleButtonPress"
+        android:tag="SMALL"
+        android:text="@string/smallBut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roundBut" />
+
+    <Button
+        android:id="@+id/largeBut"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/color_button"
+        android:onClick="brushStyleButtonPress"
+        android:tag="LARGE"
+        android:text="@string/largeBut"
+        app:layout_constraintStart_toEndOf="@+id/smallBut"
+        app:layout_constraintTop_toBottomOf="@+id/squareBut" />
+
+    <TextView
+        android:id="@+id/brush_style"
+        android:layout_width="150dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:text="@string/brush_style"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/brush_size"
+        android:layout_width="149dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/brush_size"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roundBut" />
+
+    <Button
+        android:id="@+id/confirmBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/color_button"
+        android:text="@string/confirmButton"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smallBut" />
+
+    <TextView
+        android:id="@+id/brushStyleWarn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/please_choose_brush_style"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roundBut" />
+
+    <TextView
+        android:id="@+id/brushSizeWarn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/please_choose_brush_size"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smallBut" />
+</android.support.constraint.ConstraintLayout>

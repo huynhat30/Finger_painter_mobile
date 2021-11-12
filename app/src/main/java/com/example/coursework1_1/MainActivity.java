@@ -29,6 +29,9 @@ import android.widget.TextView;
  * https://www.youtube.com/watch?v=KJGKj078Qag&t=12s
  *
  * All other functions I studied and referred from lectures and labs resources of Mobile Device Programming module.
+ *
+ * This is my Git link for the cousework
+ * https://github.com/huynhat30/Mobile_Device_Programming-Coursework1-1_FingerPainter
  */
 
 public class MainActivity extends AppCompatActivity {
